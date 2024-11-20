@@ -1,0 +1,6 @@
+services:
+  globalweb.api:
+    image: ${DOCKER_REGISTRY-}globalwebapi
+    build:
+      context: .
+      dockerfile: GlobalWeb.Api/Dockerfile
